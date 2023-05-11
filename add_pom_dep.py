@@ -14,11 +14,11 @@ with open(r"pom.xml", 'r') as fp:
     file_lines = fp.readlines()
 
     dependency = '''\t\t</dependency>
-        <dependency>
-        \t<groupId>org.springframework.boot</groupId>
-        \t<artifactId>spring-boot-starter-logging</artifactId>
-        \t<version>2.6.8</artifactId>
-        </dependency>\n'''
+\t\t<dependency>
+\t\t\t<groupId>org.springframework.boot</groupId>
+\t\t\t<artifactId>spring-boot-starter-logging</artifactId>
+\t\t\t<version>2.6.8</artifactId>
+\t\t</dependency>\n'''
 
     file_lines[line_to_insert] = dependency
     fp.close()
